@@ -33,7 +33,6 @@ namespace FoxmindedCrudProject.Controllers
             model.Id = maxId + 1;
 
             DbInitializer.db.Events.Add(model);
-            //db.SaveChanges();
             ViewBag.Message = "Data Insert Successfully";
             return RedirectToAction("index");
         }
@@ -58,7 +57,6 @@ namespace FoxmindedCrudProject.Controllers
                 data.Time = Model.Time;
                 data.AdditionalInfo = Model.AdditionalInfo;
                 data.AdditionalInfo = Model.AdditionalInfo;
-                //db.SaveChanges();
             }
 
             return RedirectToAction("index");

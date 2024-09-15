@@ -16,7 +16,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 DbInitializer.Seed(DbInitializer.db);
-//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
